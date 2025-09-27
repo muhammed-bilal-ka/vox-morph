@@ -1,0 +1,223 @@
+.voxmorph-file-label {
+  background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%);
+  color: #fff;
+  border-radius: 7px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(123,47,242,0.08);
+  display: inline-block;
+}
+
+.voxmorph-file-label:hover {
+  background: linear-gradient(90deg, #f357a8 0%, #7b2ff2 100%);
+  color: #fff;
+}
+
+.voxmorph-dropdown {
+  background: #23283a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin: 0 auto 18px auto;
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(123,47,242,0.08);
+  outline: none;
+  transition: border 0.2s;
+}
+
+.voxmorph-dropdown:focus {
+  border: 2px solid #7b2ff2;
+}
+
+.voxmorph-transform-btn {
+  background: linear-gradient(90deg, #f357a8 0%, #7b2ff2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(123,47,242,0.13);
+  transition: background 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.voxmorph-transform-btn:disabled {
+  background: #444b5a;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.voxmorph-transform-btn:hover:not(:disabled) .voxmorph-transform-gradient {
+  background: linear-gradient(90deg, #7b2ff2 0%, #f357a8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+/* VoxMorph App Enhanced Styles */
+
+.voxmorph-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7b2ff2 0%, #f357a8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.voxmorph-container {
+  max-width: 480px;
+  width: 100%;
+  background: rgba(24, 28, 36, 0.98);
+  color: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.22);
+  padding: 38px 32px 28px 32px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 32px 0;
+  position: relative;
+}
+
+.voxmorph-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  background: linear-gradient(90deg, #f357a8 0%, #7b2ff2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.voxmorph-desc {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 1.08rem;
+  margin-bottom: 22px;
+}
+
+.voxmorph-status {
+  background: #23283a;
+  color: #b3e5fc;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.voxmorph-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  justify-content: center;
+}
+
+.voxmorph-controls button, .voxmorph-controls input[type="file"] {
+  background: #2e7dff;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  min-width: 120px;
+}
+
+.voxmorph-controls button:disabled {
+  background: #444b5a;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.voxmorph-voice-select {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.voxmorph-voice-select label {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #23283a;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.voxmorph-voice-select input[type="radio"]:checked + span {
+  color: #f357a8;
+  font-weight: 700;
+}
+
+.voxmorph-audio {
+  width: 100%;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.voxmorph-audio strong {
+  color: #b3e5fc;
+  font-size: 1.08rem;
+}
+
+.voxmorph-audio audio {
+  width: 100%;
+  margin-top: 4px;
+  border-radius: 8px;
+  background: #23283a;
+}
+
+.voxmorph-download {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.voxmorph-download button {
+  background: #00c853;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.voxmorph-download button:disabled {
+  background: #444b5a;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.voxmorph-footer {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 0.98rem;
+  margin-top: 24px;
+}
